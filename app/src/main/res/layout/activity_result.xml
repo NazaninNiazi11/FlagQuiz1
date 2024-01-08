@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/textViewTotalCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="111dp"
+        android:text="Total Correct Answer : 7"
+        android:textColor="#04776C"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Success Rate : 80%"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalEmpty" />
+
+    <TextView
+        android:id="@+id/textViewTotalWrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Total Wrong Answer : 7"
+        android:textColor="#B50808"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalCorrect" />
+
+    <TextView
+        android:id="@+id/textViewTotalEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Total Empty Answer : 7"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalWrong" />
+
+    <Button
+        android:id="@+id/buttonAgain"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Play Again"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSuccess" />
+
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Quit Game"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAgain" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
